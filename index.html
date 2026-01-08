@@ -4,11 +4,141 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tharhani | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="style<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Luxury Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">YOUR NAME</div>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="section">
+    <div class="grid">
+      <div class="card reveal float">
+        <h1>Pioneer<br>Creative<br><b>UI Design</b></h1>
+        <p>Minimal • Modern • Premium Experiences</p>
+      </div>
+
+      <div class="card img-card reveal">
+        <img src="images/hero.jpg">
+      </div>
+
+      <div class="card reveal">
+        <h2>Focus</h2>
+        <p>Design driven web interfaces</p>
+      </div>
+
+      <div class="card dark full reveal">
+        <h2>Scroll to explore</h2>
+        <p>Crafted with clarity & emotion</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="grid">
+      <div class="card img-card reveal">
+        <img src="images/about.jpg">
+      </div>
+
+      <div class="card reveal">
+        <h2>About Me</h2>
+        <p>
+          I create premium, grid-based web experiences inspired
+          by modern UI trends and clean aesthetics.
+        </p>
+      </div>
+
+      <div class="card reveal">
+        <h2>Skills</h2>
+        <p>HTML • CSS • UI Design • Animations</p>
+      </div>
+
+      <div class="card dark full reveal">
+        <h2>Design Philosophy</h2>
+        <p>Less noise. More meaning.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="grid">
+      <div class="card img-card reveal">
+        <img src="images/project1.jpg">
+      </div>
+
+      <div class="card reveal">
+        <h2>Project One</h2>
+        <p>Luxury portfolio UI with grid layout.</p>
+      </div>
+
+      <div class="card img-card reveal">
+        <img src="images/project2.jpg">
+      </div>
+
+      <div class="card full reveal">
+        <h2>More Projects</h2>
+        <p>Creative websites coming soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="grid">
+      <div class="card reveal">
+        <h2>Contact</h2>
+        <p>Email: yourmail@email.com</p>
+        <p>Instagram • LinkedIn • GitHub</p>
+      </div>
+
+      <div class="card img-card full reveal">
+        <img src="images/contact.jpg">
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- SCROLL ANIMATION SCRIPT -->
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+
+  window.addEventListener('scroll', () => {
+    reveals.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      const height = window.innerHeight;
+      if (top < height - 100) {
+        el.classList.add('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+sheet" href="style.css">
 </head>
 <body >
 
-  <!-- Header / Navbar -->
   <header>
     <nav class="navbar">
       <h1 class="logo">My Portfolio</h1>
@@ -22,12 +152,11 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-text">
       <h2>Hello, I'm</h2>
       <h1>Tharhani Seetharaaman</h1>
-      <p> A passionate web developer who loves creating clean, user-friendly websites using HTML , CSS , SQL , Python and so on.</p>
+      <p>A joyful person who loves to dance and travel, embracing life to the fullest. .</p>
       <a href="./pages/projects.html" class="btn">View My Work</a>
     </div>
   
@@ -40,3 +169,4 @@
 
 </body>
 </html>
+

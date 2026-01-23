@@ -10,7 +10,7 @@ body {
   color: #fff;
 }
 
-/* ---------- NAVIGATION ---------- */
+/* NAVIGATION */
 nav {
   position: fixed;
   top: 0;
@@ -20,6 +20,7 @@ nav {
   z-index: 1000;
 }
 
+/* Container */
 .nav-content {
   max-width: 1200px;
   margin: auto;
@@ -29,12 +30,31 @@ nav {
   align-items: center;
 }
 
-.logo {
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 2px;
+/* Left section */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
+/* Logo image */
+.img-port {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+/* Logo text */
+.logo {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+}
+
+/* Links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -44,13 +64,9 @@ nav {
 .nav-links a {
   color: white;
   text-decoration: none;
-  transition: color 0.3s;
+  font-size: 15px;
+  transition: color 0.3s
 }
-
-.nav-links a:hover {
-  color: #667eea;
-}
-
 /* ---------- HERO ---------- */
 .hero {
   height: 100vh;
@@ -110,14 +126,15 @@ nav {
 }
 
 .connect-me {
-  position: fixed;
+  position: absolute;   
   right: 20px;
   bottom: 20px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  z-index: 1000;
+  z-index: 10;
 }
+
 
 /* Link style */
 .connect-me a {

@@ -230,13 +230,14 @@ nav {
 }
 
 .IT-card{
-    background: #181818;
+  background: #181818;
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.3s;
   display: flex;
   align-items: center;
   text-decoration: none;
+
 }
 
 .IT-card:hover {
@@ -249,7 +250,7 @@ nav {
 }
 
 .IT-card img {
-  width: 70%;
+  width: fit-content;
   height: 280px;
   object-fit: cover;
 }

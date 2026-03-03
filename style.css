@@ -215,6 +215,17 @@ nav {
   color: #aaa;
   font-size: 14px;
 }
+.IT-section{
+  display: flex;
+  align-items: center;
+}
+
+.IT-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
 .about-section {
   padding: 6rem 2rem;
   background: #111;
@@ -232,11 +243,16 @@ nav {
 
 .about-section {
   padding: 80px 10%;
+  line-height: 1.8;
+}
+.IT-section {
+  padding: 80px 10%;
+  line-height: 1.8;
 }
 
 .about-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 60px;
@@ -270,6 +286,7 @@ nav {
 .about-content li {
   margin-bottom: 10px;
 }
+
 /* Image */
 .about-image img {
   width: 100%;
